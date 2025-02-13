@@ -15,7 +15,7 @@
 </body>
 </html>
 
-<?php
+    <?php
     $counter=$_post["counter"];
     for($i = 0;$i<=$counter;$i++){
         echo $i."<br>";

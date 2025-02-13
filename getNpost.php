@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <form action="getNpost.php"method="get">
        <label for="username">username:</label>
        <input type="text" name="username"><br>
@@ -18,7 +19,7 @@
 </html>
 <?php
 
-echo $_GET["username"];
-echo $_GET["password"];
+echo $_GET["username"]."<br>";
+echo "{$_GET["password"]}<br>";
 
 ?>
