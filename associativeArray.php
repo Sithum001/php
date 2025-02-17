@@ -22,5 +22,6 @@ $capitals= array("Usa"=>"Woshington D.C",
                 foreach($values as $value){
                     echo"{$value}<br>";
                 }
+                 
   
 ?>
