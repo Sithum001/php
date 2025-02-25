@@ -21,7 +21,21 @@
 <?php
 if(isset($_POST["submit"])){
     $username =$_POST["username"];
-    echo" ";
+    echo" hello {$username}";
+
+    $userinput = filter_input(INPUT_POST,"username",FILTER_SANITIZE_SPECIAL_CHARS );
+    $age = filter_input(INPUT_POST,"age",FILTER_SANITIZE_NUMBER_INT);
+    $email= filter_input(INPUT_POST,"email" ,FILTER_SANITIZE_EMAIL);
+    $email=filter_input(INPUT_POST,"email",FILTER_VALIDATE_EMAIL);
+
+    if(empty($email)){
+        echo"please enter valid email adress";
+    }
+    else
+    echo "Your email is: {$email} ";
+    
+
+
 
 }
 
